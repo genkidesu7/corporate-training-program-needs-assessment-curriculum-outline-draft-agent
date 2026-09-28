@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+.env
+*.egg
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# Internally-distributed reference files — do not commit to template repos.
+# These files are placed locally for reference at project init time but must not be tracked.
+CLAUDE.md
+security_rules/
+ci_stubs/
+MANIFEST.md
+.claude/
+development-cycle/
+sdk/
+src/examples
+scaffold/
+
+# Local build/push tooling for the AGENTIC STAR deploy — not agent business
+# logic, references internal registries/hosts, and run_build_agent.sh (its
+# credential-bearing counterpart) is already git-ignored below by name.
+agenticstar-deploy/
+
+# CI-generated Stage 5 evidence artifact (scripts/stg_invoke_evidence.py) —
+# a GitLab CI pipeline artifact regenerated on every run, not a source file.
+stage5_evidence/
